@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="consegna.txt" />
+  </Folder>
+  <Project Path="../BibliotecaLibrary/BibliotecaLibrary.csproj" />
+  <Project Path="Biblioteca.csproj" />
+</Solution>

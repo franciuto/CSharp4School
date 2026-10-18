@@ -1,0 +1,14 @@
+**Verifica di Informatica – C# Windows Forms**
+
+Realizza un'applicazione Windows Forms per gestire una biblioteca che contiene libri e DVD.
+
+Ogni elemento ha un codice, un titolo e i giorni di prestito. Un libro ha in più il numero di pagine, un DVD ha in più la durata in minuti.
+
+Il costo del prestito si calcola così:
+- libro: 0,50 € al giorno, più 0,01 € per ogni pagina
+- DVD: 1,20 € al giorno, più 0,02 € per ogni minuto
+
+L'applicazione deve permettere di:
+1. inserire un libro o un DVD
+2. visualizzare l'elenco degli elementi con il relativo costo di prestito
+3. calcolare l'incasso totale
