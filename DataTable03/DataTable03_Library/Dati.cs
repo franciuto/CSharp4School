@@ -47,5 +47,31 @@ namespace DataTable03_Library
             var articoli = new Articolo().GetSampleData();
             return ArticoliToTable(articoli.FindAll(x => x.idOrdine == idOrdine));
         }
+
+        public double CalcolaSommaArticoliPerOrdine(int idOrdine)
+        {
+            var articoli = new Articolo().GetSampleData();
+            var articoliFiltrati = articoli.FindAll(x => x.idOrdine == idOrdine);
+            double somma = 0;
+            foreach (var articolo in articoliFiltrati)
+            {
+                somma += articolo.importo;
+            }
+            return somma;
+        }
+
+        public double CalcolaMediaArticoliPerOrdine(int idOrdine)
+        {
+            var articoli = new Articolo().GetSampleData();
+            var articoliFiltrati = articoli.FindAll(x => x.idOrdine == idOrdine);
+            if (articoliFiltrati.Count == 0)
+                return 0;
+            double somma = 0;
+            foreach (var articolo in articoliFiltrati)
+            {
+                somma += articolo.importo;
+            }
+            return somma / articoliFiltrati.Count;
+        }
     }
 }
