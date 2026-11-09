@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DataTable03_Library/DataTable03_Library.csproj" />
+  <Project Path="WindowsFormOrdini/WindowsFormOrdini.csproj" />
+</Solution>
